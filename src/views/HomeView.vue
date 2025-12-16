@@ -9,7 +9,7 @@ import Certificates from '../components/Certificates.vue'
 import Contact from '../components/Contact.vue'
 import Sidenav from '../components/SideNav.vue'
 import Navbar from '../components/Nav.vue'
-import Loader from '../components/Loader.vue'
+import Mobilenav from '../components/MobileNav.vue'
 
 
 
@@ -22,6 +22,7 @@ import Loader from '../components/Loader.vue'
   <router-view />
   <navbar />
   <sidenav />
+  <Mobilenav />
   <hero />
   <about />
   <skills />

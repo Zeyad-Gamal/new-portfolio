@@ -38,7 +38,7 @@ const projectStore = useProjectsStore();
           
           <div class="box" v-for="project in projectStore.all" :key="project.id">
             <div class="image">
-              <img :src="project.image" alt="" />
+              <img :src="project.images[0]" alt="" />
             </div>
 
             <div class="content" >

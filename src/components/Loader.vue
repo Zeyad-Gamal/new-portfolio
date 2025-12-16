@@ -22,7 +22,8 @@ onMounted(() => {
       <img :src="greetingIcon" alt="" width="120" height="120">
       <h1 class="greeting">{{ greeting }}</h1>
     </div>
-    <i class="bi bi-gear spinner"></i>
+    <i class="bi bi-airplane spinner"></i>
+
   </div>
 </template>
 
@@ -56,6 +57,7 @@ onMounted(() => {
   position: relative;
 
   color: whitesmoke;
+  font-family: cursive;
   font-size: 5rem;
   text-align: center;
   z-index: 10000; /* above spinner if needed */
@@ -64,32 +66,50 @@ onMounted(() => {
 .spinner {
   font-size: 6rem;
   color: white;
-  animation: spin 1.2s linear infinite;
+  rotate: 5deg;
+  transform: rotate(90deg);
+  animation: spin 5s linear infinite;
+  position: absolute;right: 0;
+
+  margin-top: 2rem !important;
 }
 
 @keyframes spin {
   0% {
-    transform: rotate(360deg);
+    transform: translate(-160rem);
     font-size: 6rem;
+    opacity: 1;
   }
   25%{
     font-size: 9rem;
+    opacity: 0.8;
   }
 
   50%{
     font-size: 12rem;
+    opacity: 0.6;
   }
 
   75%{
     font-size: 9rem;
+    opacity: 0.4;
   }
 
   100%{
     font-size: 6rem;
+    opacity: 0.2;
   }
 
   125%{
-    font-size: 3rem;
+    font-size: 3rem;opacity: 0.1;
   }
+}
+
+
+
+@media (max-width: 405px) {
+  .greeting-container{
+  top: 5%;
+}
 }
 </style>

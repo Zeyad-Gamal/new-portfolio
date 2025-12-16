@@ -24,7 +24,14 @@ const config = {
   transition: 2500,
   timeout: 0,
   pauseAutoplayOnHover: true,
-  mouseDrag: true
+  mouseDrag: true,
+    breakpoints: {
+    200: { itemsToShow: 1, height: 150 },
+    300: { itemsToShow: 1, height: 150 },
+    768: { itemsToShow: 1, height: 150 },
+    1024: { itemsToShow: 1, height: 180 },
+  },
+
 
 //    autoplay: true,      // autoplay enabled
 //   loop: true,          // loop enabled
@@ -74,17 +81,18 @@ const config = {
         <div class="view-container">
             <div class="images">
                     <Carousel v-bind="config"  :gap="20" >
-                <Slide >
-                <img :src="project.image"  draggable="false" style="width: 100%; height: 100% !important;" />
+                <Slide v-for="(img, i) in project?.images ?? []"
+  :key="i">
+                <img :src="img"  draggable="false" style="width: 100%; height: 100% !important;" />
                 
                 </Slide>
 
                 
 
-                 <Slide >
+                 <!-- <Slide >
                 <img :src="project.image"  draggable="false" style="width: 100%; height: 100% !important;" />
                 
-                </Slide>
+                </Slide> -->
                 
                     <!-- <template #addons>
                         <Pagination class="custom-pagination" />
@@ -260,11 +268,13 @@ const config = {
   overflow: hidden;
   /* background-color: #111; */
   height: fit-content;
+
 }
 
 .view-container .images .carousel .slide{
   height: 1000px !important;
 }
+
 
 
 .carousel .slide img {
@@ -274,6 +284,24 @@ const config = {
   object-fit: cover;
   pointer-events: none;
   user-select: none;
+}
+
+.carousel__slide {
+  /* opacity: 0.4;
+  transition: opacity 0.3s ease; */
+
+      height: fit-content !important;
+      margin: auto;
+      /* width: 100% !important; */
+      max-width: 100%;
+  /* max-height: 400px; */
+
+}
+
+.carousel__slide img{
+  /* height: 400px !important; */
+  max-height: 300px;
+
 }
 
 .view-container .buttons{

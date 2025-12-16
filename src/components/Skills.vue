@@ -10,6 +10,7 @@ export default {
                 {name:"HTML" , percent: 90},
                 {name: "CSS" , percent: 80}, 
                 {name: "Bootstrap" , percent: 70}, 
+                {name: "Sass" , percent: 70}, 
                 {name: "Vue js" , percent: 40}, 
                 {name: "JQuery" , percent: 70},
                 {name: "Ajax" , percent: 50},
