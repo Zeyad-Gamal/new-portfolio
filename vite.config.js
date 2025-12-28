@@ -13,7 +13,8 @@ export default defineConfig({
   base: '/new-portfolio/',
   resolve: {
     alias: {
-      '@': fileURLToPath(new URL('./src', import.meta.url))
+      '@': fileURLToPath(new URL('/new-portfolio/src', import.meta.url))
+      // '@': fileURLToPath(new URL('./src', import.meta.url))
     },
   },
 })
