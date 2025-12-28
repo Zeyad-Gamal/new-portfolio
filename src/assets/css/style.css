@@ -240,7 +240,7 @@ justify-content: center;
     color: whitesmoke;
 }
 
-.btn{
+.main-btn{
     display: inline-block;
     border-radius: 2rem;
     background-color: transparent;
@@ -266,13 +266,16 @@ justify-content: center;
     background: -webkit-linear-gradient(90deg, rgb(210, 176, 254) 25%, rgb(226, 181, 136) 0%, rgba(234,118,23,1) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+
+
+    transition: 0.1s;
 }
 
-.btn i{
+.main-btn i{
   cursor: pointer;
 }
 
-.btn:hover{
+.main-btn:hover{
     /* background: var(--main-color);
     color: white; */
 
@@ -284,7 +287,7 @@ justify-content: center;
     -webkit-text-fill-color: transparent;
 
     border-color: whitesmoke;
-    border-width: 0.4rem;
+    /* border-width: 0.4rem; */
     
 }
 
@@ -863,7 +866,8 @@ justify-content: center;
 .home .image img{
     width: 60%;  -webkit-filter: drop-shadow(5px 5px 5px #e2e2e238);
   filter: drop-shadow(5px 5px 5px #e2e2e238); width: 100% !important;filter: drop-shadow(0 0.6rem 0.75rem rgba(59, 68, 122, 0.521));
-  border-radius:  50%; margin-bottom: 9rem;filter: grayscale(0.7);
+  border-radius:  40%;
+  margin-bottom: 9rem;filter: grayscale(0.7);
  
 }
 
@@ -941,7 +945,7 @@ text-align: center;position: relative; bottom: 4rem !important;
 
     border-style: solid;
     border-radius: 50%;
-    
+    background-color: transparent;
     /* background-color: rgba(255, 255, 255, 0.371); */
     border-color: transparent;
     /* border-color: rgba(255, 255, 255, 0.681); */

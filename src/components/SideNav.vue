@@ -250,9 +250,9 @@ color: rgb(23, 11, 11);
   scale: 1.5;
 }
 
-.nnav a::first-letter{
+/* .nnav a::first-letter{
 color: #f19b2c;
-}
+} */
 
 .nnav:hover .social-links-nav{
   display: grid;

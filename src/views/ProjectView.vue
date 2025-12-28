@@ -1,9 +1,9 @@
 <script setup>
-import { useRoute } from "vue-router";
+import { useRoute , useRouter } from "vue-router";
 import  'vue3-carousel/carousel.css';
 import { Carousel , Slide , Pagination , Navigation } from "vue3-carousel";
 import { useProjectsStore } from "@/store/projectsStore";
-
+import { useMotion } from "@vueuse/motion";
 
 const route = useRoute();
 const projectId = route.params.id;
@@ -51,6 +51,16 @@ const config = {
 };
 
 
+const router = useRouter();
+
+function goBack() {
+  if (window.history.length > 1) {
+    router.back();
+  } else {
+    router.push("/projects");
+  }
+}
+
 </script>
 
 
@@ -61,7 +71,7 @@ const config = {
    <section
       class="main-section portfolio"
     >
-          <router-link to="/" class="back-btn"><i class="bi bi-arrow-return-left"></i></router-link>
+          <button to="" @click.prevent="goBack" class="back-btn"><i class="bi bi-arrow-return-left"></i></button>
 
       <section
         id="home-packages"
@@ -102,15 +112,35 @@ const config = {
 
 
                 <div class="techns mt-5">
-                  <div class="tech" v-for="tech in project.tech" :key="tech">    <img :src="tech"   alt=""> </div>
-
-                  
+                  <div class="tech" v-for="(tech, index) in project.tech"
+  :key="tech"
+  v-motion
+  :initial="{ opacity: 0, x: 40 }"
+  :enter="{
+    opacity: 1,
+    x: 0,
+    transition: {
+      delay: index * 0.12,
+      duration: 0.5,
+      ease: 'easeOut'
+    }
+  }">    <img :src="tech"   alt=""> </div>
                   </div>
             </div>
 
             <div class="content" >
-                <div class="details">
+                <div class="details"  
+                      v-motion
+                      :enter="{ opacity: 0, x: 50 }"
+                      :visible="{ opacity: 1, x: 0 }">
                     <h2 class="p-name">{{ project.name }}</h2>
+                    <h2 class="short-des">{{ project.shortLine }}</h2>
+                    <div class="short-details">
+                    <h2 v-if="project.duration" class="p-detail">Duration :  &nbsp;<span>{{ project.duration }}</span></h2>
+                    <h2 v-if="project.role" class="p-detail">Role :  &nbsp;<span> {{ project.role }} <span v-if="project.type" class="text-capitalize">( {{project.type }} )</span></span></h2>
+                    <h2 v-if="project.status" class="p-detail">Status :  &nbsp;<span> {{ project.status }}</span></h2>
+                    <h2 v-if="project.year" class="p-detail">Year :  &nbsp;<span> {{ project.year }}</span></h2>
+                    </div>
                     <p class="p-description">{{ project.description }}</p>
 
                     <div class="points">
@@ -125,9 +155,80 @@ const config = {
                 
 
                 <div class="buttons">
-                  <a class="project-details-btn github"><i class="bi bi-github"></i> <span>Github</span></a>
-                  <a class="project-details-btn demo"><i class="bi bi-play-circle-fill"></i> <span>Demo</span></a>
+                  <a v-if="project.github_url" :href="project.github_url" class="project-details-btn github"><i class="bi bi-github"></i> <span>Github</span></a>
+                  <a v-if="project.demo_url" :href="project.demo_url" class="project-details-btn demo"><i class="bi bi-play-circle-fill"></i> <span>Demo</span></a>
                 </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        
+
+        <div class="view-container problem"  >
+          <hr class="border-light">
+          <div  class="content" v-if="project.idea">
+                <div v-motion
+                    :initial="{ opacity: 0, y: 50 }"
+                    :visible="{ opacity: 1, y: 0 }" class="details problem">
+                    <h2  class="p-address">Overview</h2>
+
+                    <br>
+                    
+                    <!-- <p  class="p-question"><li>Problem :</li></p> -->
+                    <p class="p-answer" v-if="project.idea.overview" >{{ project.idea.overview }}</p>
+
+
+
+                </div>
+
+            </div> <div  class="content" v-if="project.technologies">
+                <div v-motion
+                    :initial="{ opacity: 0, y: 50 }"
+                    :visible="{ opacity: 1, y: 0 }" class="details problem">
+                    <h2  class="p-address">Technical</h2>
+
+                    <br>
+                    
+                    <ul style="list-style-type:  square; text-align: left;">
+                    <li style="color: whitesmoke;font-weight: normal;" class="p-question"
+                    v-for="technology in project.technologies" :key="technology"
+                    >
+                      {{ technology }}
+                    </li>
+                    </ul>
+
+
+
+                </div>
+
+            </div>
+        </div>
+        
+        <br><br><br><br>
+
+        <hr class="border-light">
+
+        <div class="view-container problem" v-if="project.idea">
+          <div  class="content" >
+                <div v-motion
+  :initial="{ opacity: 0, y: 50 }"
+  :visible="{ opacity: 1, y: 0 }" class="details problem">
+                    <h2  class="p-address">Problem and solution</h2>
+
+                    <br>
+                    
+                    <ul style="list-style-type:  square; text-align: left;">
+                    <li class="p-question">Problem :</li>
+                    <p class="p-answer" >{{ project.idea.problem }}</p>
+
+                    <br>
+
+                    <li class="p-question">Solution :</li>
+                    <p class="p-answer">{{ project.idea.solution }}</p>
+
+                    </ul>
+
+                </div>
+
             </div>
         </div>
 
@@ -177,6 +278,7 @@ const config = {
     .packages{
         width: 100%;
         background-color: rgba(19, 19, 77, 0.551);
+        padding-bottom: 15rem;
     }
 
 
@@ -257,8 +359,85 @@ const config = {
 .details .p-description {
   line-height: 1.6;
   /* font-size: 16px; */
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: #ddd;
+}
+
+.view-container.problem {
+
+  justify-content: left
+
+}
+
+.details .p-question{
+  line-height: 1.6;
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: coral;
+  text-align: left !important;
+}
+
+.details .p-answer {
+  line-height: 1.6;
+  /* font-size: 16px; */
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.details .p-address {
+  font-size: 3rem !important;
+  margin-bottom: 10px;
+    color: coral;
+  border-bottom-style: dotted;
+  border-width: 2px;
+  width: fit-content;
+}
+
+.details .short-details{
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;text-align: left;
+}
+
+.details .short-details .p-detail {
+  line-height: 1.6;
+  /* font-size: 16px; */
+  font-size: 1.7rem;
+  color: #ddd;
+  font-weight: 800;
+  flex: 1 1 200px;
+
+}
+
+.details .short-details .p-detail span{
+  color:coral;
+  font-size: 1.6rem;font-weight: 600;font-family: cursive;
+  /* border-bottom-style: double; */
+}
+
+.details  .short-des{
+
+  /* position: absolute;
+  font-size: 120px;
+  color: rgba(242, 235, 235, 0.05);
+  top: -20px;
+  right: 10px;
+  z-index: -1;
+  user-select: none; */
+
+  position: relative;
+  bottom: 1rem;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.803);
+  font-weight: normal;
+  /* margin-bottom: 20px;
+  */
+  } 
+
+.details .p-description::first-letter{
+  font-weight: 800;
 }
 
 

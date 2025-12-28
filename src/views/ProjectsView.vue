@@ -1,5 +1,6 @@
 <script setup>
 import { useProjectsStore } from "@/store/projectsStore";
+
 const projectStore = useProjectsStore();
 
 
@@ -28,15 +29,34 @@ const projectStore = useProjectsStore();
           <p class="section-title">
           Here are the latest projects I have implemented
           </p>
+          
           <br />
          
-          <br /><br />
+          <br />
+          
+          <div class="dropdown dropdown-group" style="width: fit-content;margin-left: auto !important;">
+  <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
+    <i class="bi bi-three-dots-vertical"></i>
+  </button>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" @click="projectStore.setFilter('all')">All</a></li>
+    <li><a class="dropdown-item" @click="projectStore.setFilter('frontend')">Frontend</a></li>
+    <li><a class="dropdown-item" @click="projectStore.setFilter('backend')">Backend</a></li>
+    <li><a class="dropdown-item" @click="projectStore.setFilter('fullstack')">Fullstack</a></li>
+    <li><a class="dropdown-item" @click="projectStore.setFilter('training')">Training</a></li>
+    <li><a class="dropdown-item" @click="projectStore.setFilter('mini')">Mini tasks</a></li>
+  </ul>
+</div>
+          
+          
+          <br />
+          
           <hr style="color: aliceblue" />
         </div>
 
-        <div class="box-container">
+        <TransitionGroup  name="projects"  tag="div" class="box-container projects-container" appear>
           
-          <div class="box" v-for="project in projectStore.all" :key="project.id">
+          <div class="box project-box" v-for="project in projectStore.filteredProjects" :key="project.id">
             <div class="image">
               <img :src="project.images[0]" alt="" />
             </div>
@@ -60,7 +80,7 @@ const projectStore = useProjectsStore();
 
 
 
-        </div>
+        </TransitionGroup>
 
       </section>
 
@@ -71,6 +91,10 @@ const projectStore = useProjectsStore();
 </template>
 
 <style scoped>
+
+  .portfolio {
+    padding-inline:  5rem;
+  }
   
   .portfolio .packages {
     padding-inline: 2rem;
@@ -80,7 +104,7 @@ const projectStore = useProjectsStore();
   .portfolio .packages .box-container {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
     gap: 2rem;
   }
 
@@ -321,6 +345,10 @@ const projectStore = useProjectsStore();
   }
   
   @media (max-width: 380px) {
+
+      .portfolio {
+    padding-inline:  2rem;
+  }
     .portfolio .packages .box-container {
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     }
@@ -333,5 +361,93 @@ const projectStore = useProjectsStore();
     }
 
   }
+
+    @media (max-width: 300px) {
+
+      .portfolio {
+    padding-inline:  0.5rem;
+  }
+
+  }
+
+
+
+  .dropdown-group .dropdown-btn::after{
+    display: none;
+  }
+
+  .dropdown-group .dropdown-btn{
+    background-color: transparent !important; border: none;
+    font-size: 2.5rem;
+
+    cursor: pointer;
+  }
+
+  .dropdown-group .dropdown-btn i{
+    cursor: pointer;
+  }
+
+  .dropdown-group .dropdown-btn:hover i{
+    color: rgba(255, 255, 255, 0.759);
+  }
+
+
+  .dropdown-group .dropdown-menu{
+    width: 20rem !important;left: -15rem !important;
+  }
+
+  .dropdown-group .dropdown-menu .dropdown-item{
+    font-size: 2rem;
+    font-family: cursive;
+  }
+
+  .dropdown-group .dropdown-menu .dropdown-item:hover,
+  .dropdown-group .dropdown-menu .dropdown-item::marker
+  {
+    background-color: rgb(214, 136, 10);
+    color: whitesmoke;
+  }
+
+
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+/* Enter */
+.projects-enter-from {
+  opacity: 0;
+  transform: translateY(40px) scale(0.95);
+}
+
+.projects-enter-to {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.projects-enter-active {
+  transition: all 0.6s ease;
+}
+
+/* Leave */
+.projects-leave-from {
+  opacity: 1;
+}
+
+.projects-leave-to {
+  opacity: 0;
+  transform: scale(0.9);
+}
+
+.projects-leave-active {
+  transition: all 0.4s ease;
+}
+
+/* Move animation when filtering */
+.projects-move {
+  transition: transform 0.5s ease;
+}
 
 </style>

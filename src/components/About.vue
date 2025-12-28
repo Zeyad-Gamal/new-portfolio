@@ -87,7 +87,7 @@
 }
 
 .about .image-container{
-    flex: 1 1 41rem;
+    flex: 1 1 21rem;
     text-align: center;
     align-items: center;
     align-content: center;

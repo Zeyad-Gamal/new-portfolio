@@ -15,6 +15,12 @@ import * as solidIcons from '@fortawesome/free-solid-svg-icons'
 import * as brandIcons from '@fortawesome/free-brands-svg-icons'
 import * as regularIcons from '@fortawesome/free-regular-svg-icons'
 
+import { MotionPlugin } from '@vueuse/motion'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Bootstrap JS
+import 'bootstrap'
 
 
 // Load ALL solid icons
@@ -38,5 +44,6 @@ Object.values(regularIcons).forEach(icon => {
 createApp(App)
     .use(router)
     .use(createPinia())
+    .use(MotionPlugin)
     .component('FontAwesomeIcon', FontAwesomeIcon)
     .mount('#app')

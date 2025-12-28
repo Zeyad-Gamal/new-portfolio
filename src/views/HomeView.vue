@@ -7,8 +7,6 @@ import Services from '../components/Services.vue'
 import Projects from '../components/Projects.vue'
 import Certificates from '../components/Certificates.vue'
 import Contact from '../components/Contact.vue'
-import Sidenav from '../components/SideNav.vue'
-import Navbar from '../components/Nav.vue'
 import Mobilenav from '../components/MobileNav.vue'
 
 
@@ -20,8 +18,6 @@ import Mobilenav from '../components/MobileNav.vue'
 
   
   <router-view />
-  <navbar />
-  <sidenav />
   <Mobilenav />
   <hero />
   <about />

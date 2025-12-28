@@ -129,30 +129,30 @@ onBeforeUnmount(() => {
         </div>
 
         <div class="social-links">
-          <a id="facebook-link-pg1" :href="site.socials.facebook" class="btn"
+          <a id="facebook-link-pg1" :href="site.socials.facebook" class="main-btn"
             ><i class="bi bi-facebook"></i
           ></a>
-          <a id="linkedin-link-pg1" :href="site.socials.linkedin" class="btn"
+          <a id="linkedin-link-pg1" :href="site.socials.linkedin" class="main-btn"
             ><i class="bi bi-linkedin"></i
           ></a>
-          <a id="whatsapp-link-pg1" :href="site.socials.whatsapp" class="btn"
+          <a id="whatsapp-link-pg1" :href="site.socials.whatsapp" class="main-btn"
             ><i class="bi bi-whatsapp"></i
           ></a>
-          <a id="github-link-pg1" :href="site.socials.github" class="btn"
+          <a id="github-link-pg1" :href="site.socials.github" class="main-btn"
             ><i class="bi bi-github"></i
           ></a>
-          <a id="instagram-link-pg1" :href="site.socials.instagram" class="btn"
+          <a id="instagram-link-pg1" :href="site.socials.instagram" class="main-btn"
             ><i class="bi bi-instagram"></i
           ></a>
-          <a id="twitter-link-pg1" :href="site.socials.twitter" class="btn"
+          <a id="twitter-link-pg1" :href="site.socials.twitter" class="main-btn"
             ><i class="bi bi-twitter-x"></i
           ></a>
 <br>
-          <a id="hire-link-pg1" href="#review" class="btn">Hire me</a>
+          <a id="hire-link-pg1" href="#review" class="main-btn">Hire me</a>
           <a
             id="resume-link-pg1"
             href="cv/Zeyad Gamal Abo setta   Software engineer.docx"
-            class="btn"
+            class="main-btn"
             ><span>Resume&nbsp;</span><i class="bi bi-download"></i
           ></a>
         </div>
@@ -190,5 +190,9 @@ onBeforeUnmount(() => {
     to {
       transform: rotate(359deg);
     }
+  }
+
+  a{
+    text-decoration: none;
   }
 </style>
