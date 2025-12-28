@@ -1,8 +1,8 @@
 import { point } from "leaflet";
 import { defineStore } from "pinia";
 
-const imagePath = "/src/assets/images/projects/";
-const techImagePath = "/src/assets/images/tech/";
+const imagePath = "@/assets/images/projects/";
+const techImagePath = "@/assets/images/tech/";
 const githubProfile = "https://github.com/Zeyad-Gamal/";
 
 function createProject(project) {
