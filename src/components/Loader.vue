@@ -23,7 +23,7 @@ onMounted(() => {
   <div  class="loader-wrap">
 
     <div class="greeting-container">
-      <img :src="greetingIcon" alt="" width="120" height="120">
+      <img :src="morningImg" alt="" width="120" height="120">
       <h1 class="greeting">{{ greeting }}</h1>
     </div>
     <i class="bi bi-airplane spinner"></i>
