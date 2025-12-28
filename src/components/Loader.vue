@@ -1,7 +1,11 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const timeImagesPath = "/src/assets/images/time/";
+// const timeImagesPath = "/src/assets/images/time/";
+
+import morningImg from "@/assets/images/time/morning.png";
+import nightImg from "@/assets/images/time/night.png";
+
 
 const greeting = ref("");
 const greetingIcon = ref("");
@@ -10,7 +14,7 @@ onMounted(() => {
   const now = new Date();
   const hours = now.getHours();
   greeting.value = hours < 12 ? "Good Morning" : "Good Evening";
-  greetingIcon.value = hours < 12 ? timeImagesPath+"morning.png" : timeImagesPath+"night.png";
+  greetingIcon.value = hours < 12 ? morningImg : nightImg;
 });
 </script>
 
