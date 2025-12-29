@@ -10,7 +10,7 @@ const projectStore = useProjectsStore();
 // const techImg = (img) =>
 //   new URL(`../assets/images/tech/${img}`, import.meta.url).href;
    
-
+const im = "\src\assets\images\projects/1\\";
 </script>
 
 
@@ -43,7 +43,7 @@ const projectStore = useProjectsStore();
           
           <div class="box" v-for="project in projectStore.three" :key="project.id">
             <div class="image">
-              <img :src="project.images[0]" alt="" />
+              <img :src="im+`\\`+project.images[0]" alt="" />
             </div>
 
             <div class="content" >
