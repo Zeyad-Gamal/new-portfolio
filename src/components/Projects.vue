@@ -10,7 +10,7 @@ const projectStore = useProjectsStore();
 // const techImg = (img) =>
 //   new URL(`../assets/images/tech/${img}`, import.meta.url).href;
    
-const im = "\src\assets\images\projects/1\\";
+
 </script>
 
 
@@ -26,13 +26,13 @@ const im = "\src\assets\images\projects/1\\";
         style="background-color: rgba(19, 19, 77, 0.551);width: 100%;"
       >
         <div>
-          <!-- <h1 class="heading-title address-title" style="color: whitesmoke">
+          <h1 class="heading-title address-title" style="color: whitesmoke">
             Portfolio
-          </h1> -->
+          </h1>
 
-          <!-- <p class="section-title">
+          <p class="section-title">
           Here are the latest projects I have implemented
-          </p> -->
+          </p>
           <br />
          
           <br /><br />
@@ -43,7 +43,7 @@ const im = "\src\assets\images\projects/1\\";
           
           <div class="box" v-for="project in projectStore.three" :key="project.id">
             <div class="image">
-              <img :src="im+`\\`+project.images[0]" alt="" />
+              <img :src="project.images[0]" alt="" />
             </div>
 
             <div class="content" >
