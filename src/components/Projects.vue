@@ -5,7 +5,7 @@ const projectStore = useProjectsStore();
 
 
 const projectImg = (id,img) =>
-  new URL(``, import.meta.url).href;
+  new URL(`../assets/images/projects/${id}/${img}`, import.meta.url).href;
 
 const techImg = (img) =>
   new URL(`../assets/images/tech/${img}`, import.meta.url).href;
