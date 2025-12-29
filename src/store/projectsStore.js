@@ -1,7 +1,7 @@
 import { point } from "leaflet";
 import { defineStore } from "pinia";
 
-const imagePath = "@/assets/images/projects/";
+const imagePath = "../assets/images/projects/";
 const techImagePath = "@/assets/images/tech/";
 const githubProfile = "https://github.com/Zeyad-Gamal/";
 
@@ -9,8 +9,9 @@ function createProject(project) {
   return {
     ...project,
     images: project.images.map(
-      img => imagePath+`${project.id}/${img}`
+      img =>  new URL(imagePath+`${project.id}/${img}`, import.meta.url).href
     ),
+    
     tech: project.tech.map(
       techn => techImagePath+`${techn}`+'.svg'
     ),
