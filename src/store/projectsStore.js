@@ -8,13 +8,12 @@ const githubProfile = "https://github.com/Zeyad-Gamal/";
 function createProject(project) {
   return {
     ...project,
-    images: project.images.map(
-      img =>  new URL(imagePath+`${project.id}/${img}`, import.meta.url).href
-    ),
-    
-    tech: project.tech.map(
-      techn => techImagePath+`${techn}`+'.svg'
-    ),
+    // images: project.images.map(
+    //   img => imagePath+`${project.id}/${img}`
+    // ),
+    // tech: project.tech.map(
+    //   techn => techImagePath+`${techn}`+'.svg'
+    // ),
     url: `/project/${project.id}`,
     github_url: project.githubName ? githubProfile + `${project.githubName}` : null,
     
