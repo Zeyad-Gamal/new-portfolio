@@ -26,13 +26,13 @@ const im = "\src\assets\images\projects/1\\";
         style="background-color: rgba(19, 19, 77, 0.551);width: 100%;"
       >
         <div>
-          <h1 class="heading-title address-title" style="color: whitesmoke">
+          <!-- <h1 class="heading-title address-title" style="color: whitesmoke">
             Portfolio
-          </h1>
+          </h1> -->
 
-          <p class="section-title">
+          <!-- <p class="section-title">
           Here are the latest projects I have implemented
-          </p>
+          </p> -->
           <br />
          
           <br /><br />
