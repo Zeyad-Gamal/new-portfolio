@@ -4,11 +4,11 @@ import { useProjectsStore } from "@/store/projectsStore";
 const projectStore = useProjectsStore();
 
 
-const projectImg = (id,img) =>
-  new URL(`../assets/images/projects/${id}/${img}`, import.meta.url).href;
+// const projectImg = (id,img) =>
+//   new URL(`../assets/images/projects/${id}/${img}`, import.meta.url).href;
 
-const techImg = (img) =>
-  new URL(`../assets/images/tech/${img}`, import.meta.url).href;
+// const techImg = (img) =>
+//   new URL(`../assets/images/tech/${img}`, import.meta.url).href;
    
 
 </script>
@@ -43,7 +43,7 @@ const techImg = (img) =>
           
           <div class="box" v-for="project in projectStore.three" :key="project.id">
             <div class="image">
-              <img :src="projectImg(project.id, project.images[0])" alt="" />
+              <img :src="project.images[0]" alt="" />
             </div>
 
             <div class="content" >
