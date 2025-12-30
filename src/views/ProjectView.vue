@@ -207,7 +207,7 @@ function goBack() {
 
         <hr class="border-light">
 
-        <div class="view-container problem" v-if="project.idea">
+        <div class="view-container problem" v-if="project.idea.problem">
           <div  class="content" >
                 <div v-motion
   :initial="{ opacity: 0, y: 50 }"
