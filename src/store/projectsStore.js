@@ -9,10 +9,10 @@ function createProject(project) {
   return {
     ...project,
     images: project.images.map(
-      img => imagePath+`${project.id}/${img}`
+      img => `${import.meta.env.BASE_URL}images/projects/${project.id}/${img}`
     ),
     tech: project.tech.map(
-      techn => techImagePath+`${techn}`+'.svg'
+      techn => `${import.meta.env.BASE_URL}images/tech/${techn}.svg`
     ),
     url: `/project/${project.id}`,
     github_url: project.githubName ? githubProfile + `${project.githubName}` : null,
