@@ -40,50 +40,49 @@ const config = {
 
 <script scoped>
 
-const certificatesPath = "/src/assets/images/certificates/";
-
+const certificatesPath = (certificate) => `${import.meta.env.BASE_URL}images/certificates/${certificate}`;
 export default {
   data() {
     return {
       certificates: [
             {
-            image: certificatesPath+'A U S.png',
+            image: certificatesPath('A U S.png'),
             title: ''
             },
             {
-            image: certificatesPath+'AAST graduation.jpeg',
+            image: certificatesPath('AAST graduation.jpeg'),
             title: ''
             },
             {
-            image: certificatesPath+'Branding.jpg',
+            image: certificatesPath('Branding.jpg'),
             title: '',
             },
             {
-            image: certificatesPath+'CIB training.jpeg',
+            image: certificatesPath('CIB training.jpeg'),
             title: '',
             },
             {
-            image: certificatesPath+'GDSC core team.jpeg',
+            image: certificatesPath('GDSC core team.jpeg'),
             title: '',
             },
             {
-            image: certificatesPath+'Google.png',
+            image: certificatesPath('Google.png'),
             title: '',
             },
             {
-            image: certificatesPath+'hp life.png',
+            image: certificatesPath('hp life.png'),
             title: '',
             },
             {
-            image: certificatesPath+'ITI Software testing.jpg',
+            image: certificatesPath('ITI Software testing.jpg'),
             title: '',
             },
             {
-            image: certificatesPath+'Python.jpg',
+            image: certificatesPath('Python.jpg'),
             title: '',
             },
             {
-            image: certificatesPath+'Sixty Seventh PlaceContestant537492-1_page-0001.jpg',
+            image: certificatesPath('Sixty Seventh PlaceContestant537492-1_page-0001.jpg'),
             title: '',
             },
             
