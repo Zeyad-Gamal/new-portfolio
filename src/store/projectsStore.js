@@ -756,7 +756,7 @@ const projectsData = [
                     "SQLite to store and manage application data",
                     "RESTful API to facilitate communication between the application and external services"
                 ],
-                type: "mini tasks",
+                type: "mini",
                 role: "solo",
                 duration: "1 day",
                 status: "Completed",
