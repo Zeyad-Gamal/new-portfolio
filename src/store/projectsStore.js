@@ -731,6 +731,36 @@ const projectsData = [
                 duration: "1 week",
                 status: "Completed",
                 year: "2025"
+            },
+
+
+            {
+                id: 20,
+                name: "SoftExpert company",
+                title: "Software task",
+                description: "Backend task for SoftExpert company to test my skills",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:['php','laravel','sqlite'],
+                points: [
+                    'From scratch design and development',
+                    'Task management system with CRUD operations',
+                    'RESTful API',
+                    'SQLite database for efficient data storage and retrieval',
+                    'Task assignment and status tracking features'
+                ],
+
+                technologies: [
+                    "PHP and Laravel to handle server-side logic and database interactions",
+                    "SQLite to store and manage application data",
+                    "RESTful API to facilitate communication between the application and external services"
+                ],
+                type: "backend",
+                role: "mini tasks",
+                duration: "1 day",
+                status: "Completed",
+                year: "2024"
             }
 
 ];
