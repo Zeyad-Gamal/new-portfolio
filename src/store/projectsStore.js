@@ -708,7 +708,7 @@ const projectsData = [
                 githubName: "",
                 demo_url:"",
                 images: ["1.png"],
-                tech:['html5','css3','javascript','bootstrap','vuejs','vitejs'],
+                tech:['html5','css3','javascript','bootstrap','vuejs','vitejs','pinia'],
                 points: [
                     'From scratch design and development',
                     'Showcases my projects and skills',
@@ -724,7 +724,9 @@ const projectsData = [
                     "Css3 and Bootstrap to style the web pages and make them responsive",
                     "JavaScript to add interactivity and dynamic features",
                     "Vue3 to build the user interface and manage application state",
-                    "Vitejs to bundle and optimize the application for performance"
+                    "Vitejs to bundle and optimize the application for performance",
+                    "Pinia for state management to handle application state efficiently",
+                    "Vue Router for seamless navigation between different sections of the portfolio"
                 ],
                 type: "frontend",
                 role: "Solo",
@@ -732,7 +734,6 @@ const projectsData = [
                 status: "Completed",
                 year: "2025"
             },
-
 
             {
                 id: 20,
@@ -761,7 +762,169 @@ const projectsData = [
                 duration: "1 day",
                 status: "Completed",
                 year: "2024"
-            }
+            },
+
+            {
+                id: 21,
+                name: "Algora company",
+                title: "Software company",
+                description: "A dashboard website for Algora software company to manage tasks and employees",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
+                tech:['php','laravel','mysql','vitejs'],
+                points: [
+                    'From scratch design and development',
+                    'Dashboard interface for managing tasks and employees',
+                    'User authentication and authorization system',
+                    'Task assignment and status tracking features',
+                    'Employee management system with CRUD operations'
+                ],
+
+                technologies: [
+                    "PHP and Laravel to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data",
+                    "Vite to bundle and optimize the application for performance",
+                    "RESTful API to facilitate communication between the application and external services"
+                ],
+
+                idea:{
+                    overview:"A dashboard website for Algora software company that allows administrators to manage tasks and employees. The dashboard provides features for task assignment, status tracking, and employee management.",
+                    problem: "The problem is the need for an efficient system to manage tasks and employees within the software company.",
+                    solution: "The solution is to develop a comprehensive dashboard website that consolidates task and employee management into a single platform. This dashboard will allow administrators to easily assign tasks, track their status, and manage employee information, improving overall efficiency and productivity."
+                },
+
+
+                type: "fullstack",
+                role: "solo",
+                duration: "3 day",
+                status: "Completed",
+                year: "2025"
+            },
+            
+            {
+                id: 22,
+                name: "PentTask company",
+                title: "Software company task",
+                description: "An analytics dashboard website for PentTask software company to make orders , products and take recommendations",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png"],
+                tech:['php','laravel','sqlite'],
+                points: [
+                    'From scratch design and development',
+                    'Dashboard interface for managing orders and products',
+                    'Order add and management system with CRUD operations',
+                    'Product management system with CRUD operations',
+                    'Analytics and reporting features to provide insights on orders and products',
+                    'Recommendation system to suggest products based on order history using AI tool'
+                ],
+
+                technologies: [
+                    "PHP and Laravel to handle server-side logic and database interactions",
+                    "SQLite to store and manage application data",
+                    "RESTful API to facilitate communication between the application and external services",
+                    'Gemini AI to implement the recommendation system for suggesting products based on order history'
+                ],
+
+                idea:{
+                    overview:"An analytics dashboard website for PentTask software company that allows administrators to manage orders and products. The dashboard provides features for order management, product management, analytics, and recommendations.",
+                    problem: "The problem is the need for an efficient system to manage orders and products within the software company.",
+                    solution: "The solution is to develop a comprehensive analytics dashboard website that consolidates order and product management into a single platform. This dashboard will allow administrators to easily manage orders and products, gain insights through analytics, and receive product recommendations based on order history, improving overall efficiency and decision-making."
+                },
+
+
+                type: "mini",
+                role: "solo",
+                duration: "2 day",
+                status: "Completed",
+                year: "2025"
+            },
+
+
+            {
+                id: 23,
+                name: "Hesabatee company",
+                title: "Software company task",
+                description: "An API system for Hesabatee software company to make tasks management and manage tasks status",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png"],
+                tech:['php','mysql'],
+                points: [
+                    'From scratch design and development',
+                    'Authentication and authorization system',
+                    'API system for managing tasks and their status',
+                    'Task management system with CRUD operations',
+                    'Task status tracking features'
+                ],
+
+                technologies: [
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data",
+                    "RESTful API to facilitate communication between the application and external services"
+                ],
+
+                idea:{
+                    overview:"An API system for Hesabatee software company that allows administrators to manage tasks and their status. The API provides features for task management and status tracking.",
+                    problem: "The problem is the need for an efficient system to manage tasks and their status within the software company.",
+                    solution: "The solution is to develop a comprehensive API system that consolidates task management and status tracking into a single platform. This API will allow administrators to easily manage tasks and track their status, improving overall efficiency and productivity."
+                },
+
+
+                type: "mini",
+                role: "solo",
+                duration: "1 day",
+                status: "Completed",
+                year: "2025"
+            },
+
+
+
+            {
+                id: 24,
+                name: "Charity foundation",
+                title: "Charity foundation",
+                description: "A charity foundation website to manage donations and campaigns",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png"],
+                tech:['html5','css3','javascript','bootstrap','jquery','php','mysql'],
+                points: [
+                    'From scratch design and development',
+                    'User authentication and authorization system',
+                    'Donation management system with CRUD operations',
+                    'Campaign management system with CRUD operations',
+                    'Admin panel for managing donations and campaigns',
+                    'Responsive design for optimal viewing on various devices',
+                    'Papers generation system for donation receipts and campaign reports'
+                ],
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3 and Bootstrap to style the web pages and make them responsive",
+                    "JavaScript and jQuery to add interactivity and dynamic features",
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data",
+                    "Print excel and PDF libraries to generate donation receipts",
+                    "Dompdf library to generate reports",
+                    "Auto saving feature for reports",
+                    "Store personal IDs and donation history"
+                ],
+
+                idea:{
+                    overview:"A charity foundation website that allows administrators to manage donations and campaigns. The website provides features for donation management, campaign management, and an admin panel for overseeing the foundation's activities.",
+                    problem: "The problem is the need for an efficient system to manage donations and campaigns within the charity foundation.",
+                    solution: "The solution is to develop a comprehensive charity foundation local website that consolidates donation and campaign management into a single platform. This website will allow administrators to easily manage donations and campaigns, improving overall efficiency and effectiveness in achieving the foundation's goals."
+                },
+
+
+                type: "fullstack",
+                role: "solo",
+                duration: "1 week",
+                status: "Completed",
+                year: "2024"
+            },
 
 ];
 

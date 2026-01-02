@@ -35,7 +35,7 @@ const projectStore = useProjectsStore();
           <br />
           
           <div class="dropdown dropdown-group" style="width: fit-content;margin-left: auto !important;">
-  <button class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
+  <button title="Filter" class="btn btn-secondary dropdown-toggle dropdown-btn" type="button" data-bs-toggle="dropdown"  aria-expanded="false">
     <i class="bi bi-three-dots-vertical"></i>
   </button>
   <ul class="dropdown-menu">

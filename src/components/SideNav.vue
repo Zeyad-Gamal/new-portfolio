@@ -52,32 +52,31 @@ onBeforeUnmount(() => {
 
       <div class="social-links-nav">
         <a id="facebook-link-nav" :href="site.socials.facebook"
-          ><i class="bi bi-facebook"></i
+            target="_blank"><i class="bi bi-facebook"></i
         ></a>
         <a id="linkedin-link-nav" :href="site.socials.linkedin" 
-          ><i class="bi bi-linkedin"></i
+           target="_blank" ><i class="bi bi-linkedin"></i
         ></a>
         <a id="whatsapp-link-nav" :href="site.socials.whatsapp"
-          ><i class="bi bi-whatsapp"></i
+           target="_blank" ><i class="bi bi-whatsapp"></i
         ></a>
         <a id="github-link-nav" :href="site.socials.github" 
-          ><i class="bi bi-github"></i
+           target="_blank" ><i class="bi bi-github"></i
         ></a>
         <a id="instagram-link-nav" :href="site.socials.instagram" 
-          ><i class="bi bi-instagram"></i
+           target="_blank" ><i class="bi bi-instagram"></i
         ></a>
         <a id="twitter-link-nav" :href="site.socials.twitter"
-          ><i class="bi bi-twitter-x"></i
+           target="_blank" ><i class="bi bi-twitter-x"></i
         ></a>
 
     
       </div>
-      <a href="#home" class="btnref">Home</a>
-      <a href="#about" class="btnref">About</a>
-      <a href="#portfolio" class="btnref">Portfolio</a>
-      <a href="#skills" class="btnref">Skills</a>
-      <a href="#review" class="btnref">Contact</a>
-
+      <router-link class="btnref" :to="{path: '/' , hash: '#home'}">Home</router-link>
+      <router-link class="btnref" :to="{path: '/' , hash: '#about'}">About</router-link>
+      <router-link class="btnref" :to="{path: '/' , hash: '#portfolio'}">Portfolio</router-link>
+      <router-link class="btnref" :to="{path: '/' , hash: '#skills'}">Skills</router-link>
+      <router-link class="btnref" :to="{path: '/' , hash: '#review'}">Contact</router-link>
 
 
       <h1 id="side-nav-current-time" class="time-content">{{ currentTime }}</h1>
@@ -100,8 +99,9 @@ onBeforeUnmount(() => {
         position: fixed;
 
         top: 1rem;left: 0;
-        background-color: rgba(245, 245, 245, 0.567);
-        padding: 3rem;
+        background-color: rgba(245, 245, 245, 0.821);
+        padding: 2.2rem;
+        padding-block: 2.8rem;
         margin-top: 35rem;
   transition: 0.4s;
          border-bottom-right-radius: 2rem;

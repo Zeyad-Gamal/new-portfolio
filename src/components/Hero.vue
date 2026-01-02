@@ -151,8 +151,10 @@ onBeforeUnmount(() => {
           <a id="hire-link-pg1" href="#review" class="main-btn">Hire me</a>
           <a
             id="resume-link-pg1"
-            href="cv/Zeyad Gamal Abo setta   Software engineer.docx"
+            href="cv/resume.docx"
+            target="_blank"
             class="main-btn"
+            
             ><span>Resume&nbsp;</span><i class="bi bi-download"></i
           ></a>
         </div>

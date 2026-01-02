@@ -413,7 +413,7 @@ function goBack() {
 
 .details .short-details .p-detail span{
   color:coral;
-  font-size: 1.6rem;font-weight: 600;font-family: cursive;
+  font-size: 1.6rem;font-weight: 600;font-family: Verdana, Geneva, Tahoma, sans-serif;
   /* border-bottom-style: double; */
 }
 
@@ -571,6 +571,7 @@ function goBack() {
   border-radius: 25%;
 
   width: 5rem;
+  height: 5rem;
 }
 
 
