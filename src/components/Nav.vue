@@ -13,7 +13,7 @@ function toggleMenu() {
 
 
 <template>
-      <section
+      <!-- <section
       class="header"
       id="header-data"
       style="
@@ -54,10 +54,10 @@ function toggleMenu() {
     class="icon"
     :icon="isOpen ? 'fas fa-times' : 'fas fa-bars'"
   /></div>
-    </section>
+    </section> -->
 </template>
 
-<style scoped>
+<!-- <style scoped>
 
     .header{
     position: fixed;
@@ -164,4 +164,4 @@ function toggleMenu() {
         text-align: center;
     }
 }
-</style>
+</style> -->

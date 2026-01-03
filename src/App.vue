@@ -5,6 +5,7 @@
   import Tfooter from './components/Footer.vue'
   import Sidenav from './components/SideNav.vue'
   import Navbar from './components/Nav.vue'
+  import mobileNav from './components/MobileNav.vue'
 
 const loading = ref(true);
 
@@ -23,6 +24,7 @@ onMounted(() => {
   <template v-else>
     <RouterView />
     <navbar />
+    <mobileNav />
     <sidenav />
     <Tfooter />
   </template>
