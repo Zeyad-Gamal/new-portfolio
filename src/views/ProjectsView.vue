@@ -372,6 +372,18 @@ const projectStore = useProjectsStore();
 
 
 
+
+
+  @media (max-width: 470px) {
+
+    .portfolio {
+    padding-inline: 0rem;
+  }
+
+  }
+
+
+
   .dropdown-group .dropdown-btn::after{
     display: none;
   }
