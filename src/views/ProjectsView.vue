@@ -377,7 +377,7 @@ const projectStore = useProjectsStore();
   @media (max-width: 470px) {
 
     .portfolio {
-    padding-inline: 0rem;
+    padding-inline: 0.7rem;
   }
 
   }
