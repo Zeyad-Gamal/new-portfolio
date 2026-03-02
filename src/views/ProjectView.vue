@@ -659,6 +659,7 @@ function goBack() {
   border-radius: 8px;
   color: #ccc;
   font-style: italic;
+  font-size: 1.6rem;
 }
 
 </style>
