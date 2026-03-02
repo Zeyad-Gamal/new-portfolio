@@ -244,7 +244,13 @@ function goBack() {
       </div>
 
       <div class="testimonial-content">
-        <p>“ {{ project.testimonial.content }} ”</p>
+        <p>“ {{ project.testimonial.content }} ”
+
+        <br><br>
+        <span style="color: coral;font-size: 1.4rem;font-weight: 600;font-family: Verdana, Geneva, Tahoma, sans-serif;">
+          - {{ project.testimonial.name }}
+        </span>
+        </p>
       </div>
     </div>
 
