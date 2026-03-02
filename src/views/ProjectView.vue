@@ -626,8 +626,9 @@ function goBack() {
 
 .problem-and-testimonial{
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  flex-direction: row;
+  background-color: red;
+  /* flex-wrap: wrap; */
   gap: 40px;
 }
 
