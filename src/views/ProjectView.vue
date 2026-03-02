@@ -652,8 +652,8 @@ function goBack() {
   margin-top: 20px;
 }
 .testimonial-person {
-  width: 150px;
-  height: 100px;
+  width: 170px;
+  height: 90px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.2);
 }
