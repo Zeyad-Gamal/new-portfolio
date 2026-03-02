@@ -233,24 +233,24 @@ function goBack() {
         </div>
 
 
+<div class="viewcontainer testimonial">
 
-        <div class="viewcontainer testimonial">
+  <div class="content" v-if="project.testimonial?.content?.length">
+    <h2 class="p-address">Testimonial</h2>
 
-          <div class="content" v-if="project.testimonial.content && project.testimonial.content.length > 0">
-            <h2 class="p-address">Testimonial</h2>
+    <div class="testimonial-block">
+      <div class="testimonial-person">
+        <img :src="project.testimonial?.image" alt="">
+      </div>
 
-            <div class="testimonial-block">
-              <div class="testimonial-person"><img :src="project.testimonial.image" alt=""></div>
+      <div class="testimonial-content">
+        <p>{{ project.testimonial.content }}</p>
+      </div>
+    </div>
 
-              <div class="testimonial-content">
-                <p>{{ project.testimonial }}</p>
-              </div>
-            </div>
-            
+  </div>
 
-          </div>
-
-        </div>
+</div>
 
 
      
