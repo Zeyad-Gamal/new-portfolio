@@ -630,25 +630,13 @@ function goBack() {
 
 
 
-.problem-and-testimonial {
+.problem-and-testimonial{
   display: flex;
   flex-direction: row;
-  gap: 30px;
-  align-items: flex-start;
+  
+  flex-wrap: wrap;
+  gap: 20px;
 }
-
-/* Make both sections take equal width */
-.problem-and-testimonial > div {
-  flex: 1;
-}
-
-/*  Mobile Responsive */
-@media (max-width: 992px) {
-  .problem-and-testimonial {
-    flex-direction: column;
-  }
-}
-
 .problem {
   flex: 1.2;
 }
