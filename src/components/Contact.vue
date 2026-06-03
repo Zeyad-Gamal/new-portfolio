@@ -222,6 +222,9 @@ export default {
 <style scoped>
 
   
+.contact{
+  width: 100%;
+}
 
 .contact .map-container{
   flex: 1 1 50rem;
