@@ -16,7 +16,6 @@ export default {
                 {name: "JQuery" , percent: 70},
                 {name: "Ajax" , percent: 50},
                 {name: "Laravel" , percent: 80},
-                {name: "Flutter" , percent: 30},
                 {name: "Flask" , percent: 40}
             ]
         },

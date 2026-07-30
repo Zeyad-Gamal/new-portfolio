@@ -73,6 +73,62 @@ const projectsData = [
             },
 
             {
+    id: 25,
+    name: "Medca Factory Management System",
+    title: "Medca Factory Management System",
+    description: "A backend RESTful API system for managing medical equipment manufacturing operations, products, customer requests, and the company's public website.",
+    githubName: "",
+    demo_url: "",
+    images: [
+        "1.png",
+        "2.png",
+        "3.png"
+    ],
+    tech: [
+        "nodejs",
+        "express",
+        "mysql",
+        "jwt",
+    ],
+
+    points: [
+        "Designed and developed a complete RESTful API from scratch",
+        "JWT authentication and role-based authorization for secure admin access",
+        "Product management with images, galleries, technical specifications, and recommendations",
+        "Customer inquiry and custom manufacturing request management",
+        "Admin dashboard APIs for managing products, categories, and customer messages",
+        "Public website APIs for products and customer requests",
+        "Database transactions to ensure data consistency across related operations",
+        "File upload and image management using Multer"
+    ],
+
+    technologies: [
+        "Node.js and Express.js for building scalable RESTful APIs",
+        "Sequelize ORM for database modeling and relational data management",
+        "MySQL as the primary relational database",
+        "JWT for authentication and secure session management",
+        "Role-Based Access Control (RBAC) for authorization",
+        "Multer for handling product image uploads and storage",
+        "Database transactions to maintain consistency between related entities",
+        "REST API architecture serving both the public website and admin dashboard"
+    ],
+
+    idea: {
+        overview: "Medca is a backend management system built for a medical equipment manufacturing company. It provides a unified RESTful API that powers both the company's public website and its internal administrative dashboard, allowing efficient management of products, manufacturing requests, customer inquiries, and business operations.",
+
+        problem: "Manufacturing companies require a centralized backend capable of managing products, customer inquiries, customized equipment requests, and administrative workflows while exposing secure APIs for both internal and public-facing applications.",
+
+        solution: "The solution was to build a scalable RESTful backend architecture using Node.js, Express.js, Sequelize, and MySQL. The system separates public and administrative functionalities, secures sensitive endpoints with JWT authentication and role-based authorization, supports image uploads, maintains relational data integrity through transactions, and provides a clean API architecture ready for production environments."
+    },
+
+    type: "backend",
+    role: "solo",
+    duration: "2 weeks",
+    status: "Completed",
+    year: "2025"
+            },
+            
+            {
                 id: 2,
                 name: "Rusukh company",
                 title: "Rusukh company system",
@@ -192,41 +248,6 @@ const projectsData = [
             },
 
             {
-                id: 5,
-                name: "Weather system",
-                title: "Weather system",
-                description: "A weather system that consists of all weather details for all countries on world",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png","2.png","3.png","4.png"],
-                tech:["html5","css3","bootstrap","sass","javascript"],
-
-                points:[
-                    'From scratch design and development',
-                    'Fetches real-time weather data from the OpenWeatherMap API',
-                    'Displays weather information in an easy-to-understand format',
-                    'Responsive design for optimal viewing on various devices'
-                ],
-
-                 idea: {
-                    overview:"A weather system that provides comprehensive weather details for countries around the world. The system fetches real-time weather data from the OpenWeatherMap API and displays it in an easy-to-understand format.",
-              },
-
-                technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3, Bootstrap, and Sass to style the web pages and make them responsive",
-                    "JavaScript to add interactivity and dynamic features",
-                    "OpenWeatherMap API to fetch real-time weather data for various locations"
-                ],
-                type: "training",
-
-                role: "Solo",
-                duration: "2 days",
-                status: "Completed",
-                year: "2022"
-            },
-
-            {
                 id: 7,
                 name: "Medical web dashboard",
                 title: "Dashboard Website",
@@ -264,6 +285,248 @@ const projectsData = [
                 duration: " 1 week",
                 status: "Completed",
                 year: "2024"
+            },
+
+            {
+                id: 16,
+                name: "Hagzkora app",
+                title: "Sports booking application",
+                description: "An app for booking sports facilities that allows users to book sports fields.",
+                shortLine:"App developed by the mobile developer using Flutter",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:['php','laravel','mysql'],
+
+                points: [
+                    'User authentication and authorization system',
+                    'Facility browsing and searching system',
+                    'Booking management system',
+                    'Payment gateway integration for booking payments',
+                    'Admin panel for managing facilities and bookings',
+                    'User dashboard for managing bookings and profile',
+                    'Notification system for booking confirmations and reminders',
+                    'Review and rating system for facilities',
+                    'Reservation cancellation and refund system',
+                    'SMS gateway integration for sending booking notifications via SMS',
+                    'OTP verification system for secure user authentication during the booking process'
+                ],
+
+                idea: {
+                    overview:"A sports booking application that allows users to book sports facilities such as fields and courts. The application provides features for browsing facilities, managing bookings, and processing payments.",
+                    problem: "The problem is the need for a convenient and efficient way for users to book sports facilities, which can be challenging using traditional methods.",
+                    solution: "The solution is to develop a sports booking application that provides a user-friendly interface for browsing and booking sports facilities. The application will streamline the booking process and provide essential features such as payment processing and booking management."
+              },
+
+                technologies: [
+                    "PHP and Laravel to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data",
+                    "Payment gateway to facilitate secure online payments for bookings",
+                    "SMS gateway to send booking notifications via SMS",
+                    'OTP verification system to ensure secure user authentication during the booking process',
+                    'Websocket to enable real-time updates for booking status and availability',
+                    'RESTful API to facilitate communication between the application and external services'
+                ],
+                type: "backend",
+                role: "Team",
+                duration: "1 month",
+                status: "Completed",
+                year: "2025"
+            },
+
+            {
+                id: 14,
+                name: "Faroon academy",
+                title: "Educational platform",
+                description: "An educational platform that provides courses and learning materials for students",
+                githubName: "j",
+                demo_url:"u",
+                images: ["1.png"],
+                
+                tech:['html5','css3','javascript','bootstrap','jquery','php','mysql'],
+
+                points: [
+                    'User authentication and authorization system',
+                    'Course and lectures management system',
+                    'Quizzes and assessments to track student progress',
+                    'Discussion forums for student interaction',
+                    'Admin panel for managing platform content and users',
+                    'Teacher dashboard for managing courses and students',
+                    'News section to keep students updated with the latest information',
+                    'Payment gateway integration for course purchases & payment using codes cards'
+                ],
+
+                idea: {
+                    overview:"An educational platform that provides courses and learning materials for students. The platform includes features such as user authentication, course management, quizzes, discussion forums, and an admin panel for managing courses and students.",
+                    problem: "The problem is the need for an online platform that offers comprehensive educational resources and facilitates student interaction and progress tracking.",
+                    solution: "The solution is to develop an educational platform that consolidates various learning resources and tools into a single platform. This platform will allow students to access courses, participate in discussions, take quizzes, and track their progress effectively."
+              },
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3 and Bootstrap to style the web pages and make them responsive",
+                    "JavaScript and jQuery to add interactivity and dynamic features",
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data"
+                ],
+                type: "fullstack",
+
+                role: "Solo",
+                duration: " +1 month",
+                status: "Completed",
+                year: "2024"
+            },
+
+            {
+                id: 15,
+                name: "Cancer detection app",
+                title: "Medical Application",
+                description: "A medical application that helps in detecting lung cancer using image processing techniques",
+                shortLine:"App developed by the mobile developer using Flutter",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:['php','python','flask','mysql'],
+
+
+                points: [
+                    'Image processing techniques for lung cancer detection',
+                    'User-friendly interface for easy navigation',
+                    'Secure storage of medical data',
+                    'Integration with machine learning model for accurate detection',
+                    'RESTful API to facilitate communication between the application and the machine learning model',
+                    'Deployment of the machine learning model on Pythonanywhere to make it accessible via an API'
+                ],
+
+                idea: {
+                    overview:"A medical application that utilizes image processing techniques to assist in the detection of lung cancer. The application provides a user-friendly interface for healthcare professionals to analyze medical images and identify potential signs of lung cancer.",
+                    problem: "The problem is the need for an efficient and accurate method for detecting lung cancer, which can be challenging using traditional diagnostic methods.",
+                    solution: "The solution is to develop a medical application that leverages advanced image processing techniques to analyze medical images and identify potential signs of lung cancer. This application will aid healthcare professionals in making more informed diagnoses and improving patient outcomes."
+              },
+
+                technologies: [
+                    "PHP to handle server-side logic and database interactions",
+                    "MySQL to store and manage medical data",
+                    "RESTful API to facilitate communication between the application and the machine learning model",
+                    "Pythonanywhere to deploy the machine learning model and make it accessible via an API"
+                ],
+
+                type: "backend",
+
+                role: "Team",
+                duration: " 12 days",
+                status: "Completed",
+                year: "2024"
+            },
+
+            {
+                id: 21,
+                name: "Algora company",
+                title: "Software company",
+                description: "A dashboard website for Algora software company to manage tasks and employees",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
+                tech:['php','laravel','mysql','vitejs'],
+                points: [
+                    'From scratch design and development',
+                    'Dashboard interface for managing tasks and employees',
+                    'User authentication and authorization system',
+                    'Task assignment and status tracking features',
+                    'Employee management system with CRUD operations'
+                ],
+
+                technologies: [
+                    "PHP and Laravel to handle server-side logic and database interactions",
+                    "MySQL to store and manage application data",
+                    "Vite to bundle and optimize the application for performance",
+                    "RESTful API to facilitate communication between the application and external services"
+                ],
+
+                idea:{
+                    overview:"A dashboard website for Algora software company that allows administrators to manage tasks and employees. The dashboard provides features for task assignment, status tracking, and employee management.",
+                    problem: "The problem is the need for an efficient system to manage tasks and employees within the software company.",
+                    solution: "The solution is to develop a comprehensive dashboard website that consolidates task and employee management into a single platform. This dashboard will allow administrators to easily assign tasks, track their status, and manage employee information, improving overall efficiency and productivity."
+                },
+
+
+                type: "fullstack",
+                role: "solo",
+                duration: "3 day",
+                status: "Completed",
+                year: "2025"
+            },
+
+            {
+                id: 9,
+                name: "Management system",
+                title: "Market Management Website",
+                description: "A supermarket management casher system that allows to manage products and sales",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:['java','mysql'],
+
+                points: [
+                    'From scratch design and development',
+                    'User authentication and authorization system',
+                    'Product management system',
+                    'Sales tracking and reporting system'
+                ],
+
+                idea: {
+                    overview:"A supermarket management cashier system that allows users to manage products and sales. The system provides features for product management, sales tracking, and reporting.",
+                    problem: "The problem is the need for an efficient system to manage supermarket products and sales.",
+                    solution: "The solution is to create a comprehensive management system that allows users to manage products, track sales, and generate reports."
+              },
+
+                technologies: [
+                    "Java to handle application logic and user interface",
+                    "MySQL to store and manage application data"
+                ],
+
+                type: "fullstack",
+
+                role: "Solo",
+                duration: " 18 days",
+                status: "Completed",
+                year: "2022"
+            },
+
+
+            {
+                id: 5,
+                name: "Weather system",
+                title: "Weather system",
+                description: "A weather system that consists of all weather details for all countries on world",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png","2.png","3.png","4.png"],
+                tech:["html5","css3","bootstrap","sass","javascript"],
+
+                points:[
+                    'From scratch design and development',
+                    'Fetches real-time weather data from the OpenWeatherMap API',
+                    'Displays weather information in an easy-to-understand format',
+                    'Responsive design for optimal viewing on various devices'
+                ],
+
+                 idea: {
+                    overview:"A weather system that provides comprehensive weather details for countries around the world. The system fetches real-time weather data from the OpenWeatherMap API and displays it in an easy-to-understand format.",
+              },
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3, Bootstrap, and Sass to style the web pages and make them responsive",
+                    "JavaScript to add interactivity and dynamic features",
+                    "OpenWeatherMap API to fetch real-time weather data for various locations"
+                ],
+                type: "training",
+
+                role: "Solo",
+                duration: "2 days",
+                status: "Completed",
+                year: "2022"
             },
 
             {
@@ -335,42 +598,6 @@ const projectsData = [
                 duration: " 2 days",
                 status: "Completed",
                 year: "2023"
-            },
-
-            {
-                id: 9,
-                name: "Management system",
-                title: "Market Management Website",
-                description: "A supermarket management casher system that allows to manage products and sales",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png"],
-                tech:['java','mysql'],
-
-                points: [
-                    'From scratch design and development',
-                    'User authentication and authorization system',
-                    'Product management system',
-                    'Sales tracking and reporting system'
-                ],
-
-                idea: {
-                    overview:"A supermarket management cashier system that allows users to manage products and sales. The system provides features for product management, sales tracking, and reporting.",
-                    problem: "The problem is the need for an efficient system to manage supermarket products and sales.",
-                    solution: "The solution is to create a comprehensive management system that allows users to manage products, track sales, and generate reports."
-              },
-
-                technologies: [
-                    "Java to handle application logic and user interface",
-                    "MySQL to store and manage application data"
-                ],
-
-                type: "fullstack",
-
-                role: "Solo",
-                duration: " 18 days",
-                status: "Completed",
-                year: "2022"
             },
 
             {
@@ -525,138 +752,6 @@ const projectsData = [
 
 
             {
-                id: 14,
-                name: "Faroon academy",
-                title: "Educational platform",
-                description: "An educational platform that provides courses and learning materials for students",
-                githubName: "j",
-                demo_url:"u",
-                images: ["1.png"],
-                
-                tech:['html5','css3','javascript','bootstrap','jquery','php','mysql'],
-
-                points: [
-                    'User authentication and authorization system',
-                    'Course and lectures management system',
-                    'Quizzes and assessments to track student progress',
-                    'Discussion forums for student interaction',
-                    'Admin panel for managing platform content and users',
-                    'Teacher dashboard for managing courses and students',
-                    'News section to keep students updated with the latest information',
-                    'Payment gateway integration for course purchases & payment using codes cards'
-                ],
-
-                idea: {
-                    overview:"An educational platform that provides courses and learning materials for students. The platform includes features such as user authentication, course management, quizzes, discussion forums, and an admin panel for managing courses and students.",
-                    problem: "The problem is the need for an online platform that offers comprehensive educational resources and facilitates student interaction and progress tracking.",
-                    solution: "The solution is to develop an educational platform that consolidates various learning resources and tools into a single platform. This platform will allow students to access courses, participate in discussions, take quizzes, and track their progress effectively."
-              },
-
-                technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3 and Bootstrap to style the web pages and make them responsive",
-                    "JavaScript and jQuery to add interactivity and dynamic features",
-                    "PHP to handle server-side logic and database interactions",
-                    "MySQL to store and manage application data"
-                ],
-                type: "fullstack",
-
-                role: "Solo",
-                duration: " +1 month",
-                status: "Completed",
-                year: "2024"
-            },
-
-            {
-                id: 15,
-                name: "Cancer detection app",
-                title: "Medical Application",
-                description: "A medical application that helps in detecting lung cancer using image processing techniques",
-                shortLine:"App developed by the mobile developer using Flutter",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png"],
-                tech:['php','python','flask','mysql'],
-
-
-                points: [
-                    'Image processing techniques for lung cancer detection',
-                    'User-friendly interface for easy navigation',
-                    'Secure storage of medical data',
-                    'Integration with machine learning model for accurate detection',
-                    'RESTful API to facilitate communication between the application and the machine learning model',
-                    'Deployment of the machine learning model on Pythonanywhere to make it accessible via an API'
-                ],
-
-                idea: {
-                    overview:"A medical application that utilizes image processing techniques to assist in the detection of lung cancer. The application provides a user-friendly interface for healthcare professionals to analyze medical images and identify potential signs of lung cancer.",
-                    problem: "The problem is the need for an efficient and accurate method for detecting lung cancer, which can be challenging using traditional diagnostic methods.",
-                    solution: "The solution is to develop a medical application that leverages advanced image processing techniques to analyze medical images and identify potential signs of lung cancer. This application will aid healthcare professionals in making more informed diagnoses and improving patient outcomes."
-              },
-
-                technologies: [
-                    "PHP to handle server-side logic and database interactions",
-                    "MySQL to store and manage medical data",
-                    "RESTful API to facilitate communication between the application and the machine learning model",
-                    "Pythonanywhere to deploy the machine learning model and make it accessible via an API"
-                ],
-
-                type: "backend",
-
-                role: "Team",
-                duration: " 12 days",
-                status: "Completed",
-                year: "2024"
-            },
-
-            {
-                id: 16,
-                name: "Hagzkora app",
-                title: "Sports booking application",
-                description: "An app for booking sports facilities that allows users to book sports fields.",
-                shortLine:"App developed by the mobile developer using Flutter",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png"],
-                tech:['php','laravel','mysql'],
-
-                points: [
-                    'User authentication and authorization system',
-                    'Facility browsing and searching system',
-                    'Booking management system',
-                    'Payment gateway integration for booking payments',
-                    'Admin panel for managing facilities and bookings',
-                    'User dashboard for managing bookings and profile',
-                    'Notification system for booking confirmations and reminders',
-                    'Review and rating system for facilities',
-                    'Reservation cancellation and refund system',
-                    'SMS gateway integration for sending booking notifications via SMS',
-                    'OTP verification system for secure user authentication during the booking process'
-                ],
-
-                idea: {
-                    overview:"A sports booking application that allows users to book sports facilities such as fields and courts. The application provides features for browsing facilities, managing bookings, and processing payments.",
-                    problem: "The problem is the need for a convenient and efficient way for users to book sports facilities, which can be challenging using traditional methods.",
-                    solution: "The solution is to develop a sports booking application that provides a user-friendly interface for browsing and booking sports facilities. The application will streamline the booking process and provide essential features such as payment processing and booking management."
-              },
-
-                technologies: [
-                    "PHP and Laravel to handle server-side logic and database interactions",
-                    "MySQL to store and manage application data",
-                    "Payment gateway to facilitate secure online payments for bookings",
-                    "SMS gateway to send booking notifications via SMS",
-                    'OTP verification system to ensure secure user authentication during the booking process',
-                    'Websocket to enable real-time updates for booking status and availability',
-                    'RESTful API to facilitate communication between the application and external services'
-                ],
-                type: "backend",
-                role: "Team",
-                duration: "1 month",
-                status: "Completed",
-                year: "2025"
-            },
-
-            {
                 id: 17,
                 name: "Tic-Tac-Toe game",
                 title: "Tic-Tac-Toe Game",
@@ -778,43 +873,7 @@ const projectsData = [
                 year: "2024"
             },
 
-            {
-                id: 21,
-                name: "Algora company",
-                title: "Software company",
-                description: "A dashboard website for Algora software company to manage tasks and employees",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
-                tech:['php','laravel','mysql','vitejs'],
-                points: [
-                    'From scratch design and development',
-                    'Dashboard interface for managing tasks and employees',
-                    'User authentication and authorization system',
-                    'Task assignment and status tracking features',
-                    'Employee management system with CRUD operations'
-                ],
 
-                technologies: [
-                    "PHP and Laravel to handle server-side logic and database interactions",
-                    "MySQL to store and manage application data",
-                    "Vite to bundle and optimize the application for performance",
-                    "RESTful API to facilitate communication between the application and external services"
-                ],
-
-                idea:{
-                    overview:"A dashboard website for Algora software company that allows administrators to manage tasks and employees. The dashboard provides features for task assignment, status tracking, and employee management.",
-                    problem: "The problem is the need for an efficient system to manage tasks and employees within the software company.",
-                    solution: "The solution is to develop a comprehensive dashboard website that consolidates task and employee management into a single platform. This dashboard will allow administrators to easily assign tasks, track their status, and manage employee information, improving overall efficiency and productivity."
-                },
-
-
-                type: "fullstack",
-                role: "solo",
-                duration: "3 day",
-                status: "Completed",
-                year: "2025"
-            },
             
             {
                 id: 22,
@@ -938,7 +997,8 @@ const projectsData = [
                 duration: "1 week",
                 status: "Completed",
                 year: "2024"
-            },
+            }
+
 
 ];
 
@@ -951,7 +1011,7 @@ export const useProjectsStore = defineStore("projects", {
     }),
 
     getters: {
-    three: (state) => state.projects.slice(0, 6),
+    three: (state) => state.projects.slice(0, 8),
     all: (state) => state.projects,
     byId: (state) => (id) => {
         return state.projects.find(project => project.id === id);
