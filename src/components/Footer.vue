@@ -5,6 +5,13 @@
   
   const site = useSiteDataStore();
 
+  function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 </script>
 
 
@@ -14,13 +21,13 @@
       <div class="box-container">
         <div class="box">
           <h3>Quick links</h3>
-          <a href="#home"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Home</a>
-          <a href="#about"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> About</a>
-          <a href="#portfolio"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Portfolio</a>
-          <a href="#review">
+          <a  href="#" @click.prevent="scrollToSection('home')"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Home</a>
+          <a  href="#" @click.prevent="scrollToSection('about')"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> About</a>
+          <a  href="#" @click.prevent="scrollToSection('portfolio')"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Portfolio</a>
+          <a  href="#" @click.prevent="scrollToSection('review')">
             <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Contact me</a
           >
-          <a href="#services"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Services</a>
+          <a href="#" @click.prevent="scrollToSection('services')"> <i><FontAwesomeIcon icon="fas fa-angle-right" /></i> Services</a>
 
         </div>
 

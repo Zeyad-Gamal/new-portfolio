@@ -11,7 +11,7 @@ export const useSiteDataStore = defineStore("siteData", {
     ],
     socials: {
       facebook: "https://www.facebook.com/zeyad.abosetta.9",
-      linkedin: "https://www.linkedin.com/in/zeyad-abosetta-z25",
+      linkedin: "https://www.linkedin.com/in/zeyadabosetta",
       whatsapp: "https://wa.me/+20109-701-1799",
       github: "https://github.com/Zeyad-Gamal",
       instagram: "https://www.instagram.com/zeyad_2552002",
@@ -25,7 +25,7 @@ export const useSiteDataStore = defineStore("siteData", {
         email: "zeyadabosetta2@gmail.com"
     },
 
-    location: "Egypt, Qena",
+    location: "Egypt, Cairo",
 
     resume: ""
     

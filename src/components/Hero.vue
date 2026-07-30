@@ -49,6 +49,13 @@ function startWordFlick() {
   }, speed);
 }
 
+function scrollToSection(id) {
+  const el = document.getElementById(id);
+  if (el) {
+    el.scrollIntoView({ behavior: 'smooth' });
+  }
+}
+
 onMounted(() => {
   startWordFlick();
 });
@@ -120,35 +127,35 @@ onBeforeUnmount(() => {
 
         <div class="refs">
           
-          <a href="#about" class="btnref">About</a>
-          <a href="#services" class="btnref">Services</a>
+          <a href="#" @click.prevent="scrollToSection('about')" class="btnref">About</a>
+          <a href="#" @click.prevent="scrollToSection('services')" class="btnref">Services</a>
           <!-- <a href="" class="btnref">Blog</a> -->
-          <a href="#portfolio" class="btnref">Portfolio</a>
-          <a href="#skills" class="btnref">Skills</a>
+          <a href="#" @click.prevent="scrollToSection('portfolio')" class="btnref">Portfolio</a>
+          <a href="#" @click.prevent="scrollToSection('skills')" class="btnref">Skills</a>
           <!-- <a href="" class="btnref">Contact</a> -->
         </div>
 
         <div class="social-links">
-          <a id="facebook-link-pg1" :href="site.socials.facebook" class="main-btn"
+          <a id="facebook-link-pg1" :href="site.socials.facebook" class="main-btn" target="_blank"
             ><i class="bi bi-facebook"></i
           ></a>
-          <a id="linkedin-link-pg1" :href="site.socials.linkedin" class="main-btn"
+          <a id="linkedin-link-pg1" :href="site.socials.linkedin" class="main-btn" target="_blank"
             ><i class="bi bi-linkedin"></i
           ></a>
-          <a id="whatsapp-link-pg1" :href="site.socials.whatsapp" class="main-btn"
+          <a id="whatsapp-link-pg1" :href="site.socials.whatsapp" class="main-btn" target="_blank"
             ><i class="bi bi-whatsapp"></i
           ></a>
-          <a id="github-link-pg1" :href="site.socials.github" class="main-btn"
+          <a id="github-link-pg1" :href="site.socials.github" class="main-btn" target="_blank"
             ><i class="bi bi-github"></i
           ></a>
-          <a id="instagram-link-pg1" :href="site.socials.instagram" class="main-btn"
+          <a id="instagram-link-pg1" :href="site.socials.instagram" class="main-btn" target="_blank"
             ><i class="bi bi-instagram"></i
           ></a>
-          <a id="twitter-link-pg1" :href="site.socials.twitter" class="main-btn"
+          <a id="twitter-link-pg1" :href="site.socials.twitter" class="main-btn" target="_blank"
             ><i class="bi bi-twitter-x"></i
           ></a>
 <br>
-          <a id="hire-link-pg1" href="#review" class="main-btn">Hire me</a>
+          <a id="hire-link-pg1" href="#" @click.prevent="scrollToSection('review')" class="main-btn">Hire me</a>
           <a
             id="resume-link-pg1"
             href="cv/resume.docx"

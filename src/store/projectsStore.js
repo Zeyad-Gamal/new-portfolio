@@ -227,42 +227,6 @@ const projectsData = [
             },
 
             {
-                id: 6,
-                name: "Old portfolio",
-                title: "Personal Portfolio",
-                description: "My old personal portfolio website to showcase my projects and skills",
-                githubName: "",
-                demo_url:"",
-                images: ["1.png"],
-                tech:["html5","css3","bootstrap","javascript"],
-
-                points:[
-                    'From scratch design and development',
-                    'Showcases my projects and skills',
-                    'Includes sections for about me, projects, skills, and contact information',
-                    'Responsive design for optimal viewing on various devices'
-                ],
-
-                idea: {
-                    overview:"A personal portfolio website to showcase my projects and skills. The website includes sections for about me, projects, skills, and contact information.",
-              },
-
-                technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3 and Bootstrap to style the web pages and make them responsive",
-                    "JavaScript to add interactivity and dynamic features"
-                ],
-
-                type: "frontend",
-
-                role: "Solo",
-                duration: "2 days",
-                status: "Completed",
-                year: "2023"
-            }
-
-            ,
-            {
                 id: 7,
                 name: "Medical web dashboard",
                 title: "Dashboard Website",
@@ -300,6 +264,41 @@ const projectsData = [
                 duration: " 1 week",
                 status: "Completed",
                 year: "2024"
+            },
+
+            {
+                id: 6,
+                name: "Old portfolio",
+                title: "Personal Portfolio",
+                description: "My old personal portfolio website to showcase my projects and skills",
+                githubName: "",
+                demo_url:"",
+                images: ["1.png"],
+                tech:["html5","css3","bootstrap","javascript"],
+
+                points:[
+                    'From scratch design and development',
+                    'Showcases my projects and skills',
+                    'Includes sections for about me, projects, skills, and contact information',
+                    'Responsive design for optimal viewing on various devices'
+                ],
+
+                idea: {
+                    overview:"A personal portfolio website to showcase my projects and skills. The website includes sections for about me, projects, skills, and contact information.",
+              },
+
+                technologies: [
+                    "Html5 to structure the web pages",
+                    "Css3 and Bootstrap to style the web pages and make them responsive",
+                    "JavaScript to add interactivity and dynamic features"
+                ],
+
+                type: "frontend",
+
+                role: "Solo",
+                duration: "2 days",
+                status: "Completed",
+                year: "2023"
             },
 
             {
