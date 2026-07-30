@@ -20,7 +20,7 @@ onMounted(() => {
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-  L.marker(qenaCoords)
+  L.marker(cairoCoords)
     .addTo(map)
     .bindPopup("Qena, Egypt")
     .openPopup();

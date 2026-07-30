@@ -1,6 +1,10 @@
 
 <script setup>
     import {ref} from "vue";
+    import { useRouter } from 'vue-router';
+
+    const router = useRouter();
+
     
     // const btnIsClicked = ref(false);
     const clicked = ref([false, false, false, false]);
@@ -37,15 +41,34 @@
     }
 
 
+//   function scrollToSection(id) {
+//   const el = document.getElementById(id);
+//   if (el) {
+//     el.scrollIntoView({ behavior: 'smooth' });
+//   }
+// }
+
+
+async function scrollToSection(id) {
+  await router.push({
+    path: '/',
+    hash: `#${id}`,
+  });
+}
+
+
 </script>
 
 <template>
 
     <div class="mobile-nav-container">
 
+        <!-- :href="'#'+btns[index].title" v-for="(isClicked, index) in clicked" -->
         <div class="mobile-nav">
-            <a :href="'#'+btns[index].title" v-for="(isClicked, index) in clicked"
+            <a
+            v-for="(isClicked, index) in clicked"
             :key="index"
+            @click.prevent="scrollToSection(btns[index].title)"
             class="mobile-nav-btn"
             :class="{ clicked: isClicked }"
             :disabled="isClicked"
