@@ -8,9 +8,12 @@ import "leaflet/dist/leaflet.css";
 
 onMounted(() => {
 // Qena coordinates
-  const qenaCoords = [26.1551, 32.7160];
+  // const qenaCoords = [26.1551, 32.7160];
 
-  const map = L.map("map").setView(qenaCoords, 14);
+// Cairo coordinates
+  const cairoCoords = [30.0444, 31.2357];
+
+  const map = L.map("map").setView(cairoCoords, 14);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
