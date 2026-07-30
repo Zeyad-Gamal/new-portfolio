@@ -96,6 +96,10 @@ export default {
             image: certificatesPath('f58a578c-ab49-4a82-8c40-b194340ea24a.webp'),
             title: '',
             },
+            {
+            image: certificatesPath('AWS Cloud practitoner.jpeg'),
+            title: '',
+            },
             
       ]
     };
