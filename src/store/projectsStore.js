@@ -82,7 +82,8 @@ const projectsData = [
     images: [
         "1.png",
         "2.png",
-        "3.png"
+        "3.png",
+        "4.png"
     ],
     tech: [
         "nodejs",
