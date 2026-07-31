@@ -74,8 +74,8 @@ const projectsData = [
 
             {
     id: 25,
-    name: "Medca Factory Management System",
-    title: "Medca Factory Management System",
+    name: "Medca Company",
+    title: "Medca Management System",
     description: "A backend RESTful API system for managing medical equipment manufacturing operations, products, customer requests, and the company's public website.",
     githubName: "",
     demo_url: "",
