@@ -22,7 +22,7 @@ onMounted(() => {
 
   L.marker(cairoCoords)
     .addTo(map)
-    .bindPopup("Qena, Egypt")
+    .bindPopup("Cairo, Egypt")
     .openPopup();
 });
 
