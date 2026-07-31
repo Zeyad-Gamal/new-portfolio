@@ -11,16 +11,18 @@ onMounted(() => {
   // const qenaCoords = [26.1551, 32.7160];
 
 // Cairo coordinates
-  const cairoCoords = [30.0444, 31.2357];
+  // const cairoCoords = [30.0444, 31.2357];
 
-  const map = L.map("map").setView(cairoCoords, 14);
+  const locationCoords = [30.0444, 31.2357];
+
+  const map = L.map("map").setView(locationCoords, 14);
 
   L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
     attribution:
       '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
   }).addTo(map);
 
-  L.marker(cairoCoords)
+  L.marker(locationCoords)
     .addTo(map)
     .bindPopup("Cairo, Egypt")
     .openPopup();
