@@ -3,63 +3,145 @@ export default {
   data() {
     return {
       categories: [
+
         {
-          title: "libraries",
-          description: "Design languages, frameworks and libraries",
+          title: "Backend & DevOps",
+          description: "Backend & DevOps",
+          items: [
+                {name:"PHP" , percent: 95},
+                {name:"Laravel" , percent: 90},
+                {name:"Node.js" , percent: 80},
+                {name:"Python" , percent: 70},
+                {name:"Flask" , percent: 40},
+                {name:"Docker" , percent: 90},
+                {name:"Kubernetes" , percent: 70},
+                {name:"AWS" , percent: 70},
+                {name:"Terraform" , percent: 80},
+                {name:"Ansible" , percent: 60},
+                {name:"Jenkins" , percent: 80},
+                {name:"Github Actions" , percent: 90},
+                {name:"REST APIs" , percent: 95},
+                {name:"Microservices" , percent: 80},
+                {name:"CI/CD" , percent: 80},
+                {name:"Linux" , percent: 90},
+                {name:"WebSockets" , percent: 90},
+            
+          ]
+        },
+
+        {
+          title: "Currently Exploring",
+          description: "Currently Learning",
+          items: [
+                {name:"Prometheus" , percent: 40},
+                {name:"Grafana" , percent: 60},
+                {name:"Loki" , percent: 30},
+            
+          ]
+        },
+
+
+        {
+          title: "Full-Stack",
+          description: "Full-Stack",
           items: [
                 {name:"HTML" , percent: 90},
                 {name: "CSS" , percent: 80}, 
                 {name: "Bootstrap" , percent: 70}, 
                 {name: "Sass" , percent: 70}, 
-                {name: "Node.js" , percent: 80}, 
                 {name: "Vue js" , percent: 40}, 
                 {name: "JQuery" , percent: 70},
                 {name: "Ajax" , percent: 50},
-                {name: "Laravel" , percent: 80},
-                {name: "Flask" , percent: 40}
-            ]
+            
+          ]
         },
+
         {
-          title: "database",
-          description: "Database management systems and database programming languages",
+          title: "languages",
+          description: "programming languages",
           items: [
-                {name:"Oracle" , percent: 90},
-                {name: "MySQL" , percent: 80}, 
+                {name:"PHP" , percent: 95},
+                {name: "Python" , percent: 70}, 
+                {name: "Java" , percent: 75}, 
+                {name: "C#" , percent: 30}, 
+                {name: "C++" , percent: 90},
+                {name: "JavaScript" , percent: 90},
+          ]
+        },
+
+        {
+          title: "Databases",
+          description: "Databases",
+          items: [
+                {name:"Oracle" , percent: 80},
+                {name: "MySQL" , percent: 90}, 
                 {name: "MongoDB" , percent: 40}, 
-                {name: "PhpMyAdmin" , percent: 80}, 
-                {name: "SQLite" , percent: 60},
-                {name: "PostgreSQL" , percent: 50}
+                {name: "PhpMyAdmin" , percent: 95}, 
+                {name: "SQLite" , percent: 80},
+                {name: "PostgreSQL" , percent: 70}
 
           ]
         },
+
+
+
+        // {
+        //   title: "libraries",
+        //   description: "Design languages, frameworks and libraries",
+        //   items: [
+        //         {name:"HTML" , percent: 90},
+        //         {name: "CSS" , percent: 80}, 
+        //         {name: "Bootstrap" , percent: 70}, 
+        //         {name: "Sass" , percent: 70}, 
+        //         {name: "Node.js" , percent: 80}, 
+        //         {name: "Vue js" , percent: 40}, 
+        //         {name: "JQuery" , percent: 70},
+        //         {name: "Ajax" , percent: 50},
+        //         {name: "Laravel" , percent: 80},
+        //         {name: "Flask" , percent: 40}
+        //     ]
+        // },
+        // {
+        //   title: "database",
+        //   description: "Database management systems and database programming languages",
+        //   items: [
+        //         {name:"Oracle" , percent: 90},
+        //         {name: "MySQL" , percent: 80}, 
+        //         {name: "MongoDB" , percent: 40}, 
+        //         {name: "PhpMyAdmin" , percent: 80}, 
+        //         {name: "SQLite" , percent: 60},
+        //         {name: "PostgreSQL" , percent: 50}
+
+        //   ]
+        // },
         // {
         //     title: "tools",
         //     description: "Tools and platforms",
         //     items: ["Git", "GitHub", "Visual Studio Code","Android Studio","Postman","XAMPP","Firebase"]
         // },
-        {
-          title: "languages",
-          description: "programming languages",
-          items: [
-                {name:"PHP" , percent: 85},
-                {name: "Python" , percent: 70}, 
-                {name: "Java" , percent: 75}, 
-                {name: "C#" , percent: 30}, 
-                {name: "C++" , percent: 90},
-                {name: "JavaScript" , percent: 60},
-                {name: "Dart" , percent: 40}
-          ]
-        },
-        {
-            title: "skills",
-            description: "Skills",
-            items: [
-                {name:"Problem Solving" , percent: 85},
-                {name: "UI / UX" , percent: 40}, 
-                {name: "Marketing" , percent: 50}
+        // {
+        //   title: "languages",
+        //   description: "programming languages",
+        //   items: [
+        //         {name:"PHP" , percent: 85},
+        //         {name: "Python" , percent: 70}, 
+        //         {name: "Java" , percent: 75}, 
+        //         {name: "C#" , percent: 30}, 
+        //         {name: "C++" , percent: 90},
+        //         {name: "JavaScript" , percent: 60},
+        //         {name: "Dart" , percent: 40}
+        //   ]
+        // },
+        // {
+        //     title: "skills",
+        //     description: "Skills",
+        //     items: [
+        //         {name:"Problem Solving" , percent: 85},
+        //         {name: "UI / UX" , percent: 40}, 
+        //         {name: "Marketing" , percent: 50}
 
-            ]
-        }
+        //     ]
+        // }
       ]
     };
   }

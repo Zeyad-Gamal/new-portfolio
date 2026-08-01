@@ -176,7 +176,9 @@ const projectsData = [
                 githubName: "",
                 demo_url:"",
                 images: ["1.png","2.png","3.png","4.png","5.png","6.png","7.png","8.png"],
-                tech:  ['html5','css3','javascript','bootstrap','jquery','php','mysql','websocket'],
+                tech:  [
+                    // 'html5','css3','javascript','bootstrap','jquery',
+                    'php','mysql','websocket'],
                 points:[
                     'From scratch design and development',
                     'User authentication and authorization system',
@@ -193,16 +195,16 @@ const projectsData = [
                 },
 
                 technologies: [
-                    "Html5 to structure the web pages",
-                    "Css3 and Bootstrap to style the web pages and make them responsive",
-                    "JavaScript and jQuery to add interactivity and dynamic features",
+                    // "Html5 to structure the web pages",
+                    // "Css3 and Bootstrap to style the web pages and make them responsive",
+                    // "JavaScript and jQuery to add interactivity and dynamic features",
                     "PHP to handle server-side logic and database interactions",
                     "MySQL to store and manage application data",
                     "MVC architecture to organize the codebase and separate concerns",
                     "WebSocket to enable real-time communication for instant updates for visa and telegram application requests"
                 ],
 
-                type: "fullstack",
+                type: "backend",
 
                 role: "Team",
                 duration: "10 days",
@@ -428,7 +430,9 @@ const projectsData = [
                 githubName: "",
                 demo_url:"",
                 images: ["1.png","2.png","3.png","4.png","5.png","6.png"],
-                tech:['php','laravel','mysql','vitejs'],
+                tech:['php','laravel','mysql'
+                    // ,'vitejs'
+                ],
                 points: [
                     'From scratch design and development',
                     'Dashboard interface for managing tasks and employees',
@@ -440,7 +444,7 @@ const projectsData = [
                 technologies: [
                     "PHP and Laravel to handle server-side logic and database interactions",
                     "MySQL to store and manage application data",
-                    "Vite to bundle and optimize the application for performance",
+                    // "Vite to bundle and optimize the application for performance",
                     "RESTful API to facilitate communication between the application and external services"
                 ],
 
@@ -451,7 +455,7 @@ const projectsData = [
                 },
 
 
-                type: "fullstack",
+                type: "backend",
                 role: "solo",
                 duration: "3 day",
                 status: "Completed",
@@ -522,7 +526,7 @@ const projectsData = [
                     "JavaScript to add interactivity and dynamic features",
                     "OpenWeatherMap API to fetch real-time weather data for various locations"
                 ],
-                type: "training",
+                type: "Training Project",
 
                 role: "Solo",
                 duration: "2 days",
@@ -775,7 +779,7 @@ const projectsData = [
                     "JavaScript to add interactivity and game logic"
                 ],
 
-                type: "training",
+                type: "Training Project",
                 role: "Solo",
                 duration: "2 days",
                 status: "Completed",
@@ -803,7 +807,7 @@ const projectsData = [
                     "Css3, Bootstrap, and Sass to style the web pages and make them responsive",
                     "JavaScript to add interactivity and calculator logic"
                 ],
-                type: "training",
+                type: "Training Project",
                 role: "Solo",
                 duration: "1 day",
                 status: "Completed",

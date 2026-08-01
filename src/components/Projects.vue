@@ -37,6 +37,10 @@ const projectStore = useProjectsStore();
           <div class="box" v-for="project in projectStore.three" :key="project.id">
             <div class="image">
               <img :src="project.images[0]" alt="" />
+
+               <div class="badge" >
+              <h1 >{{project.type}}</h1>
+            </div>
             </div>
 
             <div class="content" >
@@ -128,12 +132,24 @@ const projectStore = useProjectsStore();
     object-fit: fill;
     /* transition: 2s linear; */
     /* width: 55%;  */
-    width: 100%;
+    width: 90%;
     border-radius: 2rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
     
   }
+
+
+
+                .portfolio .packages .box-container .box .image .badge{
+                position: absolute;background-color: #111;opacity: 1; top: 0;right: 0;height: 100%;width: 10%;border-bottom-right-radius: 2rem;border-top-right-radius: 2rem;padding-block: 40px;
+              }
+
+              .portfolio .packages .box-container .box .image .badge h1{
+                font-size: 2rem;padding: 0;transform: rotate(90deg);position: relative; text-transform: capitalize;color: ghostwhite;
+              }
+
 
 
 

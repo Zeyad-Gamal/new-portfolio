@@ -5,9 +5,9 @@ export const useSiteDataStore = defineStore("siteData", {
     name: "Zeyad Gamal",
     about_jobTitle: "Full-stack developer",
     jobTitles: [
-      "Software Developer",
-      "Full-stack Developer",
-      "Web Designer"
+  "Backend Developer",
+  "DevOps Engineer",
+  "Full-stack Developer",
     ],
     socials: {
       facebook: "https://www.facebook.com/zeyad.abosetta.9",

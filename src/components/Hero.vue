@@ -121,7 +121,7 @@ onBeforeUnmount(() => {
             text-align: justify;
           "
         >
-          I am Ziad Gamal. I work as a software developer and designer, and I graduated from the Faculty of Computers and Information Technology from the <strong>AAST</strong> in 2024
+          I am Zeyad Gamal. I work as a software developer and designer, and I graduated from the Faculty of Computers and Information Technology from the <strong>AAST</strong> in 2024
            .
         </p>
 
