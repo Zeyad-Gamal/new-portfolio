@@ -33,7 +33,7 @@ export default {
           title: "Currently Exploring",
           description: "Currently Learning",
           items: [
-                {name:"Prometheus" , percent: 40},
+                {name:"Prometheus" , percent: 60},
                 {name:"Grafana" , percent: 60},
                 {name:"Loki" , percent: 30},
             
